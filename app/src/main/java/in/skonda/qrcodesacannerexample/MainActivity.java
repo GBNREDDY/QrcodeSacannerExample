@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
             //start the scanning activity from the com.google.zxing.client.android.SCAN intent
             Intent intent = new Intent(ACTION_SCAN);
             intent.putExtra("SCAN_MODE", "PRODUCT_MODE");
+            intent.putExtra("PROMPT_MESSAGE", "Scanning Barcode");
             startActivityForResult(intent, 0);
         } catch (ActivityNotFoundException anfe) {
             //on catch, show the download dialog
@@ -40,6 +41,7 @@ public class MainActivity extends Activity {
             //start the scanning activity from the com.google.zxing.client.android.SCAN intent
             Intent intent = new Intent(ACTION_SCAN);
             intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+            intent.putExtra("PROMPT_MESSAGE", "Scanning Qrcode");
             startActivityForResult(intent, 0);
         } catch (ActivityNotFoundException anfe) {
             //on catch, show the download dialog
