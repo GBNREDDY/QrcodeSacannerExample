@@ -86,4 +86,16 @@ public class MainActivity extends Activity {
             }
         }
     }
+
+    public void qrGen(View view) {
+        Intent intent=new Intent(this,CodeBuilderActivity.class);
+        intent.putExtra("tag","qr");
+        startActivity(intent);
+    }
+
+    public void brGen(View view) {
+        Intent intent=new Intent(this,CodeBuilderActivity.class);
+        intent.putExtra("tag","br");
+        startActivity(intent);
+    }
 }
