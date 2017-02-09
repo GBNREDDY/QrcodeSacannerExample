@@ -11,15 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="in.skonda.qrcodesacannerexample.MainActivity">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-        android:layout_margin="20dp"
-        android:text="Scan"
-        android:textColor="#000000"
-        android:textSize="30dp" />
+    
 
     <Button
         android:id="@+id/scanner"
